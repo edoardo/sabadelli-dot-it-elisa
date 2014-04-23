@@ -1,0 +1,18 @@
+{
+    "secret": null,
+
+    "static_host": null,
+    "www_host": null,
+
+    "flickr": {
+        "key": null,
+        "secret": null,
+        "access_token": null,
+        "access_secret": null
+    },
+
+    "memcached": {
+        "servers": [],
+        "refresh_tt": null
+    }
+}

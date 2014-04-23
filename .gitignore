@@ -1,0 +1,12 @@
+# app configurations
+site.development.json.gs
+site.development.json
+site.production.json
+
+# grunt node modules
+grunt/node_modules/
+
+# utility folders
+log/
+tmp/
+tools/

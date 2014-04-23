@@ -1,0 +1,31 @@
+% use Time::Piece;
+% sub date2iso8601 { my $d = gmtime(shift); return $d->datetime; }
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title xml:lang="en">Polaroids by Elisa</title>
+  <id>http://www.sabadelli.it/elisa</id>
+  <link rel="self" href="http://www.sabadelli.it/elisa/feed" />
+  <link rel="alternate" href="http://www.sabadelli.it/elisa" />
+  <updated><%= date2iso8601($feed->{last_update}) %></updated>
+  <author>
+    <name>Elisa Sabadelli</name>
+  </author>
+
+% foreach my $polaroid (@$polaroids) {
+  <entry>
+    <id>http://www.sabadelli.it/elisa/<%= $polaroid->permalink %></id>
+    <title xml:lang="en"><%= $polaroid->title %></title>
+    <link rel="alternate" href="http://www.sabadelli.it/elisa/<%= $polaroid->permalink %>"/>
+    <updated><%= date2iso8601($polaroid->upload_date) %></updated>
+    <author>
+      <name>Elisa Sabadelli</name>
+    </author>
+    <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <img src="<%= $polaroid->media_url %>" />
+      </div>
+    </content>
+  </entry>
+% }
+
+</feed>

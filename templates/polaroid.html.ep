@@ -1,0 +1,14 @@
+% layout 'v1';
+% title $polaroid->title;
+
+<img id="polaroid-clip" src="/elisa/img/clip.png" />
+<div id="polaroid-frame">
+% if ($nav->{prev}) {
+<a class="shutter" href="/elisa/<%= $nav->{prev} %>">
+% }
+<img src="<%= $polaroid->media_url %>" /><br />
+% if ($nav->{prev}) {
+</a>
+% }
+<p><%= $polaroid->title %></p>
+</div>

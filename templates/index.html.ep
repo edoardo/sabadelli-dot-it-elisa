@@ -1,0 +1,6 @@
+% layout 'v1';
+
+<h1><span>Polaroid</span>s from Elisa</h1>
+% if ($nav and $nav->{prev}) {
+<p><a class="shutter" href="/elisa/<%= $nav->{prev} =%>">(click here to see them)</a></p>
+% }

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'GochiHand';
+    src: url('/elisa/css/fonts/Gochi_Hand-webfont.eot');
+    src: url('/elisa/css/fonts/Gochi_Hand-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/elisa/css/fonts/Gochi_Hand-webfont.woff') format('woff'),
+         url('/elisa/css/fonts/Gochi_Hand-webfont.ttf') format('truetype'),
+         url('/elisa/css/fonts/Gochi_Hand-webfont.svg#gochi_handregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
