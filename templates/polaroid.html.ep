@@ -2,7 +2,7 @@
 % title $polaroid->title;
 
 <img id="polaroid-clip" src="/elisa/img/clip.png" />
-<div id="polaroid-frame">
+<figure id="polaroid-frame">
 % if ($nav->{prev}) {
 <a class="shutter" href="/elisa/<%= $nav->{prev} %>">
 % }
@@ -10,5 +10,5 @@
 % if ($nav->{prev}) {
 </a>
 % }
-<p><%= $polaroid->title %></p>
-</div>
+<figcaption><%= $polaroid->title %></figcaption>
+</figure>

@@ -219,7 +219,7 @@ sub refresh_cache {
 sub search {
     my ($class, $filters) = @_;
 
-    my $request_url = 'http://api.flickr.com/services/rest';
+    my $request_url = 'https://api.flickr.com/services/rest';
 
     my %request_params = (
         method => 'flickr.people.getPhotos',
