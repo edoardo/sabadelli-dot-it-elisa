@@ -3,7 +3,7 @@ use Mojo::Base -strict;
 use Test::More;
 use Test::Mojo;
 
-my $t = Test::Mojo->new('SabadelliDotIt::Newborn');
-$t->get_ok('/')->status_is(200)->content_like(qr/Mojolicious/i);
+my $t = Test::Mojo->new('SabadelliDotIt::Elisa');
+$t->get_ok('/elisa/')->status_is(200)->content_like(qr/Polaroid/i);
 
 done_testing();
