@@ -13,6 +13,6 @@
 
     "memcached": {
         "servers": [],
-        "refresh_tt": null
+        "refresh_ttl": null
     }
 }
